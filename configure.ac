@@ -91,6 +91,10 @@ ia64)
 	arch=ia64
 	AC_DEFINE([IA64], 1, [Define for the IA64 architecture.])
 	;;
+k1*)
+	arch=k1c
+	AC_DEFINE([K1C], 1, [Define for the K1C architecture])
+	;;
 m68k)
 	arch=m68k
 	AC_DEFINE([M68K], 1, [Define for the m68k architecture.])
