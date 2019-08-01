@@ -310,7 +310,7 @@ main()
 			if [ "${jobs}" -gt "$(( ncpus * 2 ))" ]; then
 				read wait_pid rest
 				pids="$rest"
-				wait -n 2>/dev/null || wait "$wait_pid"
+				wait -n 2>/dev/null || wait "$wait_pid" || true
 				: $(( jobs -= 1 ))
 			fi <<- EOF
 			$pids
