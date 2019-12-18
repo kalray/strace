@@ -20,12 +20,12 @@ raw_syscall_0(const kernel_ulong_t nr, kernel_ulong_t *err)
 	register kernel_ulong_t r6 __asm__("r6") = nr;
 	register kernel_ulong_t r0 __asm__("r0");
 	__asm__ __volatile__("scall %[rSys]"
-			     : "=r"(r0)
-			     : [rSys] "r"(r6)
+			     : "=r"(r0), [rSys] "+r"(r6)
+			     : 
 			     : "memory",
-			       /* Restored by syscall in theory but better safe
+			       /* Restored by syscall in theory but better be safe
 			        * than sorry */
-			       "r1", "r2", "r3", "r4", "r5", "r6", "r7",
+			       "r1", "r2", "r3", "r4", "r5", "r7",
 			       /* Unused arguments */
 			        "r8", "r9", "r10", "r11",
 			       /* Struct pointer */
