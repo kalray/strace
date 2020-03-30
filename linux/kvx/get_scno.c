@@ -10,6 +10,6 @@
 static int
 arch_get_scno(struct tcb *tcp)
 {
-	tcp->scno = k1c_regs.gpr_regs[6];
+	tcp->scno = kvx_regs.gpr_regs[6];
 	return 1;
 }

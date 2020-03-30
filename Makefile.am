@@ -563,16 +563,16 @@ EXTRA_DIST =				\
 	linux/ia64/syscallent.h		\
 	linux/ia64/userent.h		\
 	linux/inet_diag.h		\
-	linux/k1c/arch_regs.c		\
-	linux/k1c/get_error.c		\
-	linux/k1c/get_scno.c		\
-	linux/k1c/get_syscall_args.c	\
-	linux/k1c/ioctls_arch0.h	\
-	linux/k1c/ioctls_inc0.h		\
-	linux/k1c/raw_syscall.h		\
-	linux/k1c/set_error.c		\
-	linux/k1c/set_scno.c		\
-	linux/k1c/syscallent.h		\
+	linux/kvx/arch_regs.c		\
+	linux/kvx/get_error.c		\
+	linux/kvx/get_scno.c		\
+	linux/kvx/get_syscall_args.c	\
+	linux/kvx/ioctls_arch0.h	\
+	linux/kvx/ioctls_inc0.h		\
+	linux/kvx/raw_syscall.h		\
+	linux/kvx/set_error.c		\
+	linux/kvx/set_scno.c		\
+	linux/kvx/syscallent.h		\
 	linux/m68k/arch_defs_.h		\
 	linux/m68k/arch_regs.c		\
 	linux/m68k/arch_rt_sigframe.c	\
